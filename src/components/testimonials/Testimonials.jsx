@@ -6,7 +6,7 @@ export default function Testimonials() {
     {
       id: 1,
       name: "Abhishek Yadav",
-      title: "Senior Analyst",
+      title: "Infosys",
       img:
         "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/twitter.png",
