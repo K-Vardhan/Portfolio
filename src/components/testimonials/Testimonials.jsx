@@ -5,8 +5,8 @@ export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
+      name: "Abhishek Yadav",
+      title: "Senior Analyst",
       img:
         "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/twitter.png",
@@ -40,20 +40,23 @@ export default function Testimonials() {
     <div className="testimonials" id="testimonials">
       <h1>Testimonials</h1>
       <div className="container">
-        {data.map(p => (
+        {data.map((d) => (
 
-          <div className="card">
+          <div className={d.featured ? "card featured" : "card"}>
             <div className="top">
-              <img className="left" src="assets/right-arrow.png" alt="" />
-              <img className="user" src="https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" />
-              <img className="right" src="assets/youtube.png" alt="" />
+              <img className="left" 
+              src="assets/right-arrow.png" alt="" />
+              <img className="user" 
+              src={d.img} alt="" />
+              <img className="right" 
+              src={d.icon} alt="" />
             </div>
             <div className="center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit aliquam amet minima vitae voluptas labore est saepe.
+              {d.desc}
             </div>
             <div className="bottom">
-              <h3>Abhishek Yadav</h3>
-              <h4>Infosys</h4>
+              <h3>{d.name}</h3>
+              <h4>{d.title}</h4>
             </div>
           </div>
         ))}
