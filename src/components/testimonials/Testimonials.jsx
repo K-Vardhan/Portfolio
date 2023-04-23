@@ -44,12 +44,12 @@ export default function Testimonials() {
 
           <div className={d.featured ? "card featured" : "card"}>
             <div className="top">
-              <img className="left" 
-              src="assets/right-arrow.png" alt="" />
-              <img className="user" 
-              src={d.img} alt="" />
-              <img className="right" 
-              src={d.icon} alt="" />
+              <img className="left"
+                src="assets/right-arrow.png" alt="" />
+              <img className="user"
+                src={d.img} alt="" />
+              <img className="right"
+                src={d.icon} alt="" />
             </div>
             <div className="center">
               {d.desc}
